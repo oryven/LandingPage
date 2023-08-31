@@ -1,0 +1,165 @@
+* {
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+}
+
+
+/* stile header  */
+header {
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-image: url("./img/dua-lipa-ge7ff07baf_1920.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    color:white;
+    position: relative;
+
+}
+
+.overlay {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 21%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size:50px
+}
+
+button {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 25px;
+    background-color: rgb(240, 29, 141);
+    color: white;
+}
+
+
+button:hover {
+    background-color: fuchsia;
+}
+
+/* sezione main */
+
+main {
+    position: relative;
+    min-height: 100px;
+}
+
+.image img {
+    border-radius: 100%;
+    width: 60%;
+}
+
+ .row:nth-child(2) div:nth-child(1) {
+    order:1;
+}
+.description {
+    padding: 0 10%;
+}
+
+.over {
+    position: absolute;
+  
+}
+
+/* spin */
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* stile footer */
+
+footer {
+    color: white;
+    margin-top: 50px;
+    height: 100px;
+}
+
+@media all and ( max-width: 768px ) {
+  
+
+    .image img {
+        border-radius: 100%;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-top: 20px
+    }
+
+    .description {
+        padding: 0 5%;
+    }
+}
+
+
+@media all and ( max-width: 425px ) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size:30px
+    }
+
+    .image img {
+        border-radius: 100%;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-top: 20px
+    }
+}
+
+
